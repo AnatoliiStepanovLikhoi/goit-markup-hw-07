@@ -252,21 +252,20 @@ p{
     /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
-
 .hero-section__desc{
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+
         /* text-align: center; */
         letter-spacing: 0.06em;
         color: #FFFFFF;
         /* cursor: pointer; */
 }
-
-
 
 /* benefits list */
 
@@ -449,6 +448,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 44px;
     height: 44px;
     border-radius: 50px;
@@ -509,7 +509,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    align-items: center;
+
     width: 168px;
     height: 90px;
     color: var(--main-icon-color);
@@ -746,7 +746,6 @@ p{
     width: 44px;
     height: 44px;
     border-radius: 50px;
-    /* color: #FFFFFF; */
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms var(--timing-transition);
 
@@ -778,10 +777,6 @@ p{
     display: flex;
     width: 570px;
 }
-
-/* footer-form-field{
-    display: block;
-} */
 
 .footer__label .footer__input{
     width: 358px;
