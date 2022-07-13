@@ -193,7 +193,7 @@ p{
 
 /* order section */
 
-.order-window{
+.hero-section{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
     background-color: #2F303A;
     background-repeat: no-repeat;
@@ -203,13 +203,26 @@ p{
     background-size: cover;
 }
 
-.hero-content{
+.hero-section__content{
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
 }
 
-.order-button{
+.hero-section__title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-section__button{
         font-family: inherit;
         display: inline-block;
         min-width: 200px;
@@ -221,11 +234,11 @@ p{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         border: 2px transparent;
-        /* transition: background-color 250ms var(--timing-transition); */
+        transition: background 250ms var(--timing-transition);
 }
 
-.order-button:hover,
-.order-button:focus,
+.hero-section__button:hover,
+.hero-section__button:focus,
 .send-button:hover,
 .send-button:focus{
     background: #188CE8;
@@ -234,7 +247,7 @@ p{
 }
 
 
-.order-service{
+.hero-section__desc{
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
@@ -247,18 +260,7 @@ p{
         /* cursor: pointer; */
 }
 
-.title{
-        margin: 0 auto;
-        margin-bottom: 30px;
-        max-width: 696px;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-}
+
 
 /* benefits list */
 
@@ -645,7 +647,7 @@ p{
     transition: transform 250ms var(--timing-transition);
 }
 
-.projects-list__link:hover .project-overlay{
+.projects-list__link:hover .projects-list__overlay{
     transform: translateY(0%);
 }
 
