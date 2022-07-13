@@ -473,65 +473,68 @@
     <!-- Backdrop -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
+      <div class="backdrop__modal">
         <button
-          class="form-btn-close close-center"
+          class="backdrop__btn backdrop__btn--center"
           type="button"
           data-modal-close
         >
-          <svg class="modal-icon" width="11px" height="11px">
+          <svg width="11px" height="11px">
             <use href="images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <p class="backdrop__title">Оставьте свои данные, мы вам перезвоним</p>
+
         <form class="form">
-          <ul class="form-list list">
-            <li class="form-field">
-              <label class="form-label" for="name">Имя</label>
-              <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon" width="12px" height="12px">
+          <ul class="list">
+            <li class="form__field">
+              <label class="form__label" for="name">Имя</label>
+              <input class="form__input" type="text" name="name" id="name" />
+              <svg class="form__icon" width="12px" height="12px">
                 <use href="./images/icons.svg#person"></use>
               </svg>
             </li>
-            <li class="form-field">
-              <label class="form-label" for="tel">Телефон</label>
-              <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon" width="13px" height="13px">
+            <li class="form__field">
+              <label class="form__label" for="tel">Телефон</label>
+              <input class="form__input" type="tel" name="tel" id="tel" />
+              <svg class="form__icon" width="13px" height="13px">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </li>
-            <li class="form-field">
-              <label class="form-label" for="mail">Почта</label>
-              <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon" width="15px" height="12px">
+            <li class="form__field">
+              <label class="form__label" for="mail">Почта</label>
+              <input class="form__input" type="email" name="mail" id="mail" />
+              <svg class="form__icon" width="15px" height="12px">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </li>
           </ul>
-          <div class="form-text">
-            <label class="form-label" for="comment">Комментарий</label>
+          <div class="form__text">
+            <label class="form__label" for="comment">Комментарий</label>
             <textarea
-              class="form-comment"
+              class="form__comment"
               name="comment"
               id="comment"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-agree">
-            <label class="form-agree-line">
-              <input class="form-checkbox" type="checkbox" name="checkbox" />
-              <span class="form-checkbox-custom">
-                <svg class="form-checkbox-icon">
+          <div class="form__agree">
+            <label class="form__wrap">
+              <input class="form__checkbox" type="checkbox" name="checkbox" />
+              <span class="form__checkbox--custom">
+                <svg class="form__checkbox--fill">
                   <use href="./images/icons.svg#chose"></use>
                 </svg>
               </span>
               <span
                 >Соглашаюсь с рассылкой и принимаю
-                <a class="form-agree-link" href="">Условия договора</a></span
+                <a class="form__link" href="">Условия договора</a></span
               >
             </label>
           </div>
-          <button class="send-button" type="submit">Отправить</button>
+
+          <button class="form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
