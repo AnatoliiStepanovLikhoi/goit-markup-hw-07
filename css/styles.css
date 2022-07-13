@@ -61,6 +61,12 @@ p{
     margin: 0;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
@@ -264,66 +270,52 @@ p{
 
 /* benefits list */
 
-/* .benefit-container{
-    margin-top: 30px;
-} */
+.benefit {
+    display: flex;
+}
 
-.benefit-card-icon::before {
+.benefit__card {
+    max-width: 270px;
+    margin: 0 15px;
+}
+
+.benefit__icon::before {
     display: block;
+    content: "";
     height: 120px;
+
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
+
     border-radius: 4px;
     margin-bottom: 30px;
-    content: "";
-    
 }
-.benefit-antenna::before{
+.benefit--antenna::before{
     content: "";
     background-image: url(../images/antenna-1.svg);
     background-size: 70px;
 }
 
-.benefit-clock::before {
+.benefit--clock::before {
     content: "";
     background-image: url(../images/clock-1.svg);
     background-size: 70px;
 }
 
-.benefit-diagram::before {
+.benefit--diagram::before {
     content: "";
     background-image: url(../images/diagram-1.svg);
     background-size: 70px;
 }
 
-.benefit-astronaut::before {
+.benefit--astronaut::before {
     content: "";
     background-image: url(../images/astronaut-1.svg);
     background-size: 70px;
 }
 
-/* .benefit-container::before{
-        content: "";
-        display: block;
-        height: 120px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
-} */
-
-.benefit-list{
-    display: flex;
-}
-
-.benefit-card{
-    max-width: 270px;
-    margin: 0 15px;
-}
-
-.benefit-title{
+.benefit__title{
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -331,7 +323,7 @@ p{
     margin-bottom: 10px;
 }
 
-.benefit-description{
+.benefit__description{
         line-height: 1.71;
         color: var(--description-text-color);
         margin-top: 0;
@@ -340,11 +332,11 @@ p{
 
 
 /* Our work */
-.our-work-block{
+.work-block{
     padding-top: 0;
 }
 
-.our-work-title{
+.work-block__title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -352,27 +344,27 @@ p{
         margin-top: 0;
         margin-bottom: 50px;
 }
-.work-list{
+.work-block__list{
         display: flex;
         margin-left: -15px;
         margin-right: -15px;
 }
 
-.work-card{
+.work-block__card{
     margin: 0 15px;
 }
 
-.work-thumb{
+.work-block__thumb{
     position: relative;
 }
 
-.work-image{
+.work-block__image{
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.work-description{
+.work-block__description{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -381,7 +373,7 @@ p{
     background: rgba(47, 48, 58, 0.8);
 }
 
-.work-text{
+.work-block__text{
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -395,7 +387,7 @@ p{
     background-color: #F5F4FA;
 }
 
-.team-title{
+.team__title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -404,13 +396,13 @@ p{
         margin-bottom: 50px;
 }
 
-.team-list{
+.team__list{
         display: flex;
         margin-left: -15px;
         margin-right: -15px;
 }
 
-.team-card{
+.team__card{
     background-color: #FFFFFF;
     max-width: 270px;
     margin: 0 15px;
@@ -420,13 +412,13 @@ p{
     border-radius: 4px;
 }
 
-.team-image{
+.team__image{
     display: block;
     max-width: 100%;
     height: auto;
 }
 
-.team-name{
+.team__name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -435,7 +427,7 @@ p{
     margin-bottom: 10px;
 }
 
-.work-role{
+.team__role{
         font-style: normal;
         font-size: 16px;
         line-height: 1.19;
@@ -453,7 +445,7 @@ p{
     margin-right: auto;
 }
 
-.social-link{
+.social__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -465,25 +457,25 @@ p{
 
 }
 
-.social-item + .social-item{
+.social__item + .social__item{
     margin-left: 10px;
 }
 
-.team-icon{
+.social__icon{
     fill: currentColor;
     width: 20px;
     height: 20px;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social__link:hover,
+.social__link:focus {
     background-color: var(--accent-text-color);
     color: var(--secondary-icon-color);
 }
 
 /* Our clients */
 
-.clients-title{
+.clients{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -491,11 +483,11 @@ p{
         margin-top: 0;
         margin-bottom: 50px;
 }
-.clients-list{
+.clients__list{
         display: flex;
-        }
+    }
 
-.client{
+.clients__item{
     flex-basis: calc((100% - 150px) / 6);
     max-width: 170px;
     height: 92px;
@@ -504,16 +496,16 @@ p{
     transition: outline 250ms var(--timing-transition);
 }
 
-.client:hover,
-.client:focus{
+.clients__item:hover,
+.clients__item:focus{
     outline: 1px solid var(--accent-text-color);
 }
 
-.clients-list> .client + .client{
+.clients__list> .clients__item + .clients__item{
     margin-left: 30px;
 }
 
-.client-link{
+.clients__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -525,12 +517,12 @@ p{
    
 }
 
-.client-link:hover,
-.client-link:focus{
+.clients__link:hover,
+.clients__link:focus{
     color: var(--accent-text-color);
 }
 
-.client-icon {
+.clients__icon {
     width: 106px;
     height: 60px;
     fill: currentColor;
@@ -690,7 +682,6 @@ p{
 .footer__container{
     display: flex;
     align-items: baseline;
-
 }
 
 .logo__footer{
@@ -713,7 +704,6 @@ p{
         color: #FFFFFF;
         font-style: normal;
         text-decoration: none;
-
 }
 .footer__link{
         line-height: 1.71;
@@ -899,12 +889,6 @@ p{
 .backdrop__btn:hover,
 .backdrop__btn:focus{
     fill: var(--accent-text-color);
-}
-
-.backdrop__btn--center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .backdrop__title{
