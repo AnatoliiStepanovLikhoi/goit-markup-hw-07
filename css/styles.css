@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-text-color: #212121;
     --accent-text-color: #2196F3;
     --description-text-color: #757575;
@@ -6,16 +6,16 @@
     --secondary-icon-color: #ffffff;
 
     --timing-transition: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: #FFFFFF;
     font-size: 14px;
     letter-spacing: 0.03em;
 
-}
+} */
 
 /* Колір основного тексту #212121 */
 
@@ -26,19 +26,20 @@ body {
 /* Колір адреси #FFFFFF */
 
 
-/* прибрані крапки в списках */
+/* 
 .list {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
+
 
 /* приховані заголовки */
 /* .hidden{
     display: none;
 } */
 
-.visually-hidden {
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -47,11 +48,9 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-}
+} */
 
-
-/* прибрані відсупи тексту та заголовків */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -59,30 +58,33 @@ h5,
 h6,
 p{
     margin: 0;
-}
+} */
 
-.center {
+/* .center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
+/* 
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
-}
+} */
 
-.section{
+/* .section{
         padding-top: 94px;
         padding-bottom: 94px;
-}
+} */
+
 
 /* header */
-.page-header{
+
+
+/* .page-header{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -133,9 +135,11 @@ p{
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms var(--timing-transition);
-}
+} */
 
 /* підсвітка поточної сторінки */
+
+/* 
 .navigation__list .navigation__title--current {
     color: var(--accent-text-color);
 }
@@ -162,7 +166,7 @@ p{
     margin-left: auto;
 }
 
-.page-header__contacts li + li{
+.page-header__contacts .page-header__item + .page-header__item{
     margin-left: 50px;
 }
 
@@ -195,10 +199,11 @@ p{
 .page-header__icon:hover,
 .page-header__icon:focus{
     fill: currentColor;
-}
+}  */
 
-/* order section */
+/* hero section */
 
+/* 
 .hero-section{
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
     background-color: #2F303A;
@@ -234,7 +239,6 @@ p{
         min-width: 200px;
         height: 50px;
         padding: 10px 32px;
-        /* text-align: center; */
 
         background: var(--accent-text-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -249,7 +253,6 @@ p{
 .send-button:focus{
     background: #188CE8;
     cursor: pointer;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 }
 
 .hero-section__desc{
@@ -260,16 +263,14 @@ p{
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-
-        /* text-align: center; */
+        
         letter-spacing: 0.06em;
         color: #FFFFFF;
-        /* cursor: pointer; */
-}
+} */
 
 /* benefits list */
 
-.benefit {
+/* .benefit {
     display: flex;
 }
 
@@ -327,11 +328,12 @@ p{
         color: var(--description-text-color);
         margin-top: 0;
         margin-bottom: 0px;
-}
+} */
 
 
 /* Our work */
-.work-block{
+
+/* .work-block{
     padding-top: 0;
 }
 
@@ -379,9 +381,11 @@ p{
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--secondary-icon-color);
-}
+} */
 
 /* Our team */
+
+/* 
 .team {
     background-color: #F5F4FA;
 }
@@ -433,9 +437,9 @@ p{
         text-align: center;
         color: var(--description-text-color);
         margin-bottom: 16px;
-    }
+} */
 
-.social{
+/* .social{
     display: flex;
     max-width: 206px;
     height: 44px;
@@ -471,11 +475,11 @@ p{
 .social__link:focus {
     background-color: var(--accent-text-color);
     color: var(--secondary-icon-color);
-}
+} */
 
 /* Our clients */
-
-.clients{
+/* 
+.clients__title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -526,14 +530,14 @@ p{
     width: 106px;
     height: 60px;
     fill: currentColor;
-}
+} */
 
 
 /* Portfolio main */
 
 /* buttons */
-
-.buttons-list{
+/* 
+.buttons-list__list{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -569,18 +573,13 @@ p{
         background: var(--accent-text-color);
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
         border-radius: 4px;
-}
+} */
 
 /* projects */
 
-.projects-list{
+/* .projects-list{
     display: flex;
     flex-wrap: wrap;
-    /* margin-left: -15px;
-    margin-right: -15px; */
-    /* gap: 30px;
-    margin: auto; */
-    
 }
 
 .projects-list__card{
@@ -597,14 +596,6 @@ p{
 .projects-list__card:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
-
-/* .project-card:nth-child(-n + 3) {
-    margin-top: 0;
-} */
-
-/* .project-card:nth-child(3n + 3){
-    margin-right: 0;
-} */
 
 .projects-list__link{
     display: block;
@@ -670,11 +661,11 @@ p{
         font-size: 16px;
         line-height: 1.88;
         color: var(--description-text-color);
-}
+} */
 
 /* footer */
 
-.footer{
+/* .footer{
     background-color: #2F303A;
     padding: 60px 0;
 }
@@ -711,13 +702,11 @@ p{
         font-style: normal;
         text-decoration: none;
         transition: color 250ms var(--timing-transition);
-}
+} */
 
 /* Footer socials */
-
+/* 
 .footer__connect{
-    /* display: flex; */
-    /* align-content: baseline; */
     max-width: 206px;
     margin-left: 70px;
 }
@@ -764,12 +753,11 @@ p{
 .footer-socials__link:hover,
 .footer-socials__link:focus {
     background-color: var(--accent-text-color);
-    /* color: var(--secondary-icon-color); */
-}
+} */
 
 /* Footer form */
 
-.footer__subscribe{
+/* .footer__subscribe{
     margin-left: auto;
 }
 
@@ -827,11 +815,11 @@ p{
     fill: var(--secondary-icon-color);
     width: 24px;
     height: 24px;
-}
+} */
 
 /* Backdrop */
 
-.backdrop{
+/* .backdrop{
     position: fixed;
     top:0;
     left:0;
@@ -850,9 +838,10 @@ p{
 
 .backdrop.is-hidden .backdrop__modal {
     transform: translate(-50%, -50%) scale(0.9);
-}
-/* Modal window */
+} */
 
+/* Modal window */
+/* 
 .backdrop__modal{
     position: absolute;
     top: 50%;
@@ -961,9 +950,9 @@ p{
 
 .form__input:focus~.form__icon{
     fill: var(--accent-text-color);
-}
+} */
 
-.form__text{
+/* .form__text{
     margin-bottom: 20px;
 }
 
@@ -980,12 +969,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.form__checkbox{
-    /* -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none */
+/* .form__checkbox{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -1023,9 +1009,9 @@ p{
 
 .form__link{
     color: var(--accent-text-color);
-}
+} */
 
-.form__button{
+/* .form__button{
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -1046,4 +1032,4 @@ p{
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-}
+} */

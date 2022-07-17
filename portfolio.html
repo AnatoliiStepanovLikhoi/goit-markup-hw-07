@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -13,13 +13,16 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+    /> -->
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+
     <title>Portfolio</title>
   </head>
   <body>
-
     <!-- Header -->
+    <header class="page-header">
       <div class="container page-header__container">
         <!-- header_details -->
         <nav class="navigation">
@@ -28,14 +31,14 @@
           >
           <ul class="list navigation__list">
             <li class="navigation__item">
-              <a
-                href="./index.html"
-                class="navigation__title"
-                >Студия</a
-              >
+              <a href="./index.html" class="navigation__title">Студия</a>
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__title navigation__title--current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="navigation__title navigation__title--current"
+                >Портфолио</a
+              >
             </li>
             <li class="navigation__item">
               <a href="" class="navigation__title">Контакты</a>
@@ -44,7 +47,7 @@
         </nav>
 
         <ul class="list page-header__contacts">
-          <li>
+          <li class="page-header__item">
             <a
               class="page-header__mail"
               href="mailto:mailto:info@devstudio.com"
@@ -52,16 +55,16 @@
               <svg class="page-header__icon" height="16" width="16">
                 <use href="images/icons.svg#mail"></use>
               </svg>
-              <span>info@devstudio.com</span></a
-            >
+              info@devstudio.com
+            </a>
           </li>
-          <li>
+          <li class="page-header__item">
             <a class="page-header__telephone" href="tel:+380961111111">
               <svg class="page-header__icon" height="16" width="16">
                 <use href="images/icons.svg#telephone"></use>
               </svg>
-              <span>+380961111111</span></a
-            >
+              +380961111111
+            </a>
           </li>
         </ul>
       </div>
@@ -69,33 +72,33 @@
 
     <main>
       <!-- Buttons bar -->
-      <section class="section">
-        <div class="container">
-          <h1 class="visually-hidden">portfolio</h1>
-          <ul class="list buttons-list">
+      <section class="buttons-list section">
+        <div class="buttons-list__container container">
+          <h1 class="buttons-list__title visually-hidden">portfolio</h1>
+          <ul class="list buttons-list__list">
             <li class="buttons-list__item">
               <button class="buttons-list__button" type="button">
-                <span>Все</span>
+                <span class="buttons-list__text">Все</span>
               </button>
             </li>
             <li class="buttons-list__item">
               <button class="buttons-list__button" type="button">
-                <span>Веб-сайты</span>
+                <span class="buttons-list__text">Веб-сайты</span>
               </button>
             </li>
             <li class="buttons-list__item">
               <button class="buttons-list__button" type="button">
-                <span">Приложения</span>
+                <span class="buttons-list__text">Приложения</span>
               </button>
             </li>
             <li class="buttons-list__item">
               <button class="buttons-list__button" type="button">
-                <span>Дизайн</span>
+                <span class="buttons-list__text">Дизайн</span>
               </button>
             </li>
             <li class="buttons-list__item">
               <button class="buttons-list__button" type="button">
-                <span>Маркетинг</span>
+                <span class="buttons-list__text">Маркетинг</span>
               </button>
             </li>
           </ul>
@@ -249,7 +252,9 @@
                   </div>
                 </div>
                 <div class="projects-list__content">
-                  <h2 class="projects-list__title">Inspiration has no Borders</h2>
+                  <h2 class="projects-list__title">
+                    Inspiration has no Borders
+                  </h2>
                   <p class="projects-list__description">Веб-сайт</p>
                 </div>
               </a>
@@ -400,11 +405,11 @@
         <!-- footer subscribe form -->
         <div class="footer__subscribe">
           <p class="footer__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <form autocomplete="off">
-            <div class="footer__form">
-              <label class="footer__label">
+          <form class="footer-form" autocomplete="off">
+            <div class="footer-form__thumb">
+              <label class="footer-form__label">
                 <input
-                  class="footer__input"
+                  class="footer-form__input"
                   type="email"
                   name="email"
                   placeholder="Email"
